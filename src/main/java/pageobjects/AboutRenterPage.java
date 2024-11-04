@@ -1,15 +1,14 @@
-package ru.yandex.praktikum.pageObject;
+package pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class AboutRenter {
+public class AboutRenterPage {
     WebDriver driver;
     private final By orderHeader = By.className("Order_Header__BZXOb");
     private final By name = By.xpath(".//input[@placeholder='* Имя']");
@@ -22,34 +21,34 @@ public class AboutRenter {
     private final By yandexButton = By.xpath(".//*[@alt='Yandex']");
     private final By scooterButton = By.xpath(".//*[@alt='Scooter']");
 
-    public AboutRenter(WebDriver driver) {
+    public AboutRenterPage(WebDriver driver) {
         this.driver = driver;
     }
 
     //метод ожидания загруки страницы заказа
-    public AboutRenter waitForLoadOrderPage() {
+    public AboutRenterPage waitForLoadOrderPage() {
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(driver -> (driver.findElement(orderHeader).getText() != null
                 && !driver.findElement(orderHeader).getText().isEmpty()
         ));
         return this;
     }
 
-    public AboutRenter inputName(String newName) {
+    public AboutRenterPage inputName(String newName) {
         driver.findElement(name).sendKeys(newName);
         return this;
     }
 
-    public AboutRenter inputSurname(String newSurname) {
+    public AboutRenterPage inputSurname(String newSurname) {
         driver.findElement(surname).sendKeys(newSurname);
         return this;
     }
 
-    public AboutRenter inputAddress(String newAddress) {
+    public AboutRenterPage inputAddress(String newAddress) {
         driver.findElement(address).sendKeys(newAddress);
         return this;
     }
 
-    public AboutRenter changeStateMetro(int stateNumber) {
+    public AboutRenterPage changeStateMetro(int stateNumber) {
         driver.findElement(stateMetro).click();
         By newStateMetro = By.xpath(String.format(nameStateMetro, stateNumber));
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(newStateMetro));
@@ -57,7 +56,7 @@ public class AboutRenter {
         return this;
     }
 
-    public AboutRenter inputTelephone(String newTelephone) {
+    public AboutRenterPage inputTelephone(String newTelephone) {
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(telephone));
         driver.findElement(telephone).sendKeys(newTelephone);
         return this;

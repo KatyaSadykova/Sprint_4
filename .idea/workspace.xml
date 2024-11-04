@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5c09440-4c52-4e72-9ae9-1eb75ece8a4e" name="Changes" comment="" />
+    <list default="true" id="e5c09440-4c52-4e72-9ae9-1eb75ece8a4e" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/scootertests/OrderStatusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pageObject/AboutRenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/AboutRenterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pageObject/AboutScooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/AboutScooter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pageObject/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pageObject/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pageObject/PopUpWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/PopUpWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pageObject/constants/CreateOrderButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/constants/CreateOrderButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pageObject/constants/HomePageConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pageObject/constants/RentDurationConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/constants/RentDurationConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pageObject/constants/ScooterColours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/constants/ScooterColours.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/pageObject/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scootertests/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/pageObject/OrderCreateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scootertests/OrderCreateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/pageObject/OrderStatusTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/pageObject/ScooterButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scootertests/ScooterButtonTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +47,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;KatyaSadykova&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/KatyaSadykova/Sprint_4.git&quot;,
+    &quot;accountId&quot;: &quot;ab84ab57-f828-4f71-91b6-9ecd7272beef&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -47,8 +77,10 @@
     "JUnit.HomePageTest.executor": "Run",
     "JUnit.OrderCreateTest.executor": "Run",
     "JUnit.OrderCreateTest.testCreateOrderWithUpButton.executor": "Run",
+    "JUnit.OrderStatusTest (1).executor": "Run",
     "JUnit.OrderStatusTest.executor": "Run",
     "JUnit.OrderStatusTest.orderStatusWithoutNumber.executor": "Run",
+    "JUnit.OrderStatusTest.orderStatusWithoutNumberTest.executor": "Run",
     "JUnit.ScooterButtonTest.clickScooterFromAboutRenterPage.executor": "Run",
     "JUnit.ScooterButtonTest.clickScooterFromAboutScooterPage.executor": "Debug",
     "JUnit.ScooterButtonTest.clickScooterFromOrderStatusPage.executor": "Run",
@@ -56,11 +88,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "develope",
+    "git-widget-placeholder": "#1 on develope",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/projects/Sprint_4",
+    "last_opened_file_path": "C:/Users/User/projects/Sprint_4/src",
     "onboarding.tips.debug.path": "C:/Users/User/projects/Sprint_4/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "module"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -71,32 +109,17 @@
       <recent name="ru.yandex.praktikum.pageObject" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderStatusTest">
-    <configuration name="HomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OrderStatusTest.orderStatusWithoutNumberTest">
+    <configuration name="OrderStatusTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.yandex.praktikum.pageObject.*" />
+          <option name="PATTERN" value="scootertests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.pageObject" />
-      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.pageObject.HomePageTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderCreateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sprint_4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.yandex.praktikum.pageObject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.pageObject" />
-      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.pageObject.OrderCreateTest" />
+      <option name="PACKAGE_NAME" value="scootertests" />
+      <option name="MAIN_CLASS_NAME" value="scootertests.OrderStatusTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,7 +129,7 @@
       <module name="Sprint_4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.yandex.praktikum.pageObject.*" />
+          <option name="PATTERN" value="scootertests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,7 +144,7 @@
       <module name="Sprint_4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.yandex.praktikum.pageObject.*" />
+          <option name="PATTERN" value="scootertests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,16 +156,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderStatusTest.orderStatusWithoutNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scootertests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="scootertests" />
+      <option name="MAIN_CLASS_NAME" value="scootertests.OrderStatusTest" />
+      <option name="METHOD_NAME" value="orderStatusWithoutNumberTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ScooterButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.yandex.praktikum.pageObject.*" />
+          <option name="PATTERN" value="scootertests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.pageObject" />
-      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.pageObject.ScooterButtonTest" />
+      <option name="PACKAGE_NAME" value="scootertests" />
+      <option name="MAIN_CLASS_NAME" value="scootertests.ScooterButtonTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderStatusTest.orderStatusWithoutNumberTest" />
+        <item itemvalue="JUnit.OrderStatusTest (1)" />
         <item itemvalue="JUnit.ScooterButtonTest" />
         <item itemvalue="JUnit.OrderStatusTest.orderStatusWithoutNumber" />
         <item itemvalue="JUnit.OrderStatusTest" />
-        <item itemvalue="JUnit.OrderCreateTest" />
-        <item itemvalue="JUnit.HomePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -167,6 +206,15 @@
       <option name="presentableId" value="Default" />
       <updated>1729427453115</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1730740088717</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730740088719</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,7 +243,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -211,6 +259,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,4 +1,4 @@
-package ru.yandex.praktikum.pageObject.constants;
+package pageobjects.constants;
 
 public enum ScooterColours {
     BLACK,

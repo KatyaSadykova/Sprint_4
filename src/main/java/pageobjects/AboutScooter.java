@@ -1,4 +1,4 @@
-package ru.yandex.praktikum.pageObject;
+package pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static ru.yandex.praktikum.pageObject.constants.ScooterColours.*;
+import static pageobjects.constants.ScooterColours.*;
 
 public class AboutScooter {
     WebDriver driver;

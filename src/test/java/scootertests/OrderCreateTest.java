@@ -1,4 +1,4 @@
-package ru.yandex.praktikum.pageObject;
+package scootertests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -8,13 +8,17 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pageobjects.AboutRenterPage;
+import pageobjects.AboutScooter;
+import pageobjects.HomePage;
+import pageobjects.PopUpWindow;
 
 import static org.junit.Assert.assertTrue;
-import static ru.yandex.praktikum.pageObject.constants.CreateOrderButton.DOWN_BUTTON;
-import static ru.yandex.praktikum.pageObject.constants.CreateOrderButton.UP_BUTTON;
-import static ru.yandex.praktikum.pageObject.constants.RentDurationConstants.*;
-import static ru.yandex.praktikum.pageObject.constants.ScooterColours.BLACK;
-import static ru.yandex.praktikum.pageObject.constants.ScooterColours.GREY;
+import static pageobjects.constants.CreateOrderButton.DOWN_BUTTON;
+import static pageobjects.constants.CreateOrderButton.UP_BUTTON;
+import static pageobjects.constants.RentDurationConstants.*;
+import static pageobjects.constants.ScooterColours.BLACK;
+import static pageobjects.constants.ScooterColours.GREY;
 
 @RunWith(Parameterized.class)
 public class OrderCreateTest {
@@ -76,7 +80,7 @@ public class OrderCreateTest {
                 .waitForLoadHomePage()
                 .clickCreateOrderButton(button);
 
-        new AboutRenter(driver)
+        new AboutRenterPage(driver)
                 .waitForLoadOrderPage()
                 .inputName(name)
                 .inputSurname(surname)
@@ -97,5 +101,34 @@ public class OrderCreateTest {
         popUpWindow.clickButtonYes();
 
         assertTrue(popUpWindow.getHeaderAfterCreateOrder().contains(expectedHeader));
+    }
+        @Test
+        public void testCreateOrderWithDownButton() {
+            new HomePage(driver)
+                    .waitForLoadHomePage()
+                    .scrollToDownOrderButton()
+                    .clickDownOrderButton();
+
+            new AboutRenterPage(driver)
+                    .waitForLoadOrderPage()
+                    .inputName(name)
+                    .inputSurname(surname)
+                    .inputAddress(address)
+                    .changeStateMetro(stateMetroNumber)
+                    .inputTelephone(telephoneNumber)
+                    .clickNextButton();
+
+            new AboutScooter(driver)
+                    .waitAboutRentHeader()
+                    .inputDate(date)
+                    .inputDuration(duration)
+                    .changeColour(colour)
+                    .inputComment(comment)
+                    .clickButtonCreateOrder();
+
+            PopUpWindow popUpWindow = new PopUpWindow(driver);
+            popUpWindow.clickButtonYes();
+
+            assertTrue(popUpWindow.getHeaderAfterCreateOrder().contains(expectedHeader));
     }
 }

@@ -1,4 +1,4 @@
-package ru.yandex.praktikum.pageObject.constants;
+package pageobjects.constants;
 
 public class RentDurationConstants {
     public static final String ONE_DAY = "сутки";

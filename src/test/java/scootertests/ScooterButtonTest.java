@@ -1,4 +1,4 @@
-package ru.yandex.praktikum.pageObject;
+package scootertests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -7,6 +7,10 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageobjects.AboutRenterPage;
+import pageobjects.AboutScooter;
+import pageobjects.HomePage;
+import pageobjects.OrderStatus;
 
 import java.time.Duration;
 
@@ -31,7 +35,7 @@ public class ScooterButtonTest {
     @Test
     public void clickScooterFromAboutRenterPage() {
         HomePage homePage = new HomePage(driver);
-        AboutRenter aboutRenter = new AboutRenter(driver);
+        AboutRenterPage aboutRenter = new AboutRenterPage(driver);
 
         homePage.waitForLoadHomePage()
                 .clickUpOrderButton();
@@ -45,9 +49,9 @@ public class ScooterButtonTest {
     }
 
     @Test
-    public void clickScooterFromAboutScooterPage() {
+    public void clickScooterFromAboutScooterPageTest() {
         HomePage homePage = new HomePage(driver);
-        AboutRenter aboutRenter = new AboutRenter(driver);
+        AboutRenterPage aboutRenter = new AboutRenterPage(driver);
         AboutScooter aboutScooter = new AboutScooter(driver);
 
         homePage.waitForLoadHomePage()
@@ -70,7 +74,7 @@ public class ScooterButtonTest {
     }
 
     @Test
-    public void clickScooterFromOrderStatusPage() {
+    public void clickScooterFromOrderStatusPageTest() {
         HomePage homePage = new HomePage(driver);
         OrderStatus orderStatus = new OrderStatus(driver);
 
