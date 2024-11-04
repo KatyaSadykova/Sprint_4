@@ -3,16 +3,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### IntelliJ IDEA ###
-.gitignoreidea/
-.gitignoreshelf/
-/.idea/workspace.xml
-/.idea/compiler.xml
-/.idea/encodings.xml
-/.idea/jarRepositories.xml
-.gitignoremisc.xml
-/.idea/vcs.xml
-/.idea/uiDesigner.xml
 
 ### Eclipse ###
 .apt_generated
